@@ -1,0 +1,29 @@
+<%- include('../layout.ejs') -%>
+   
+<div class="d-flex flex-row content justify-content-center mx-auto">
+    <form action="/users/signup" method="post" class="card">
+       <div class="card-header">Inscription</div>
+
+          <div class="card-body">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" name="username" class="form-control">
+          </div>
+        
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control">
+           </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="form-control">
+            </div>
+
+         <div class="w-100">
+           <input type="submit" value="Valider" class="btn btn-primary ml-auto d-block">
+         </div>
+       </div>
+    </form>
+  </div>
+</div>

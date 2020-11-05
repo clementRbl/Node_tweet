@@ -6,8 +6,12 @@ const port = process.env.PORT || 3000;
 const index = require('./routes');
 const errorHandler = require('errorhandler');
 
+exports.app = app;
+
 require('dotenv').config()
 require('./database');
+require('./config/session.config');
+require('./config/passport.config');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
