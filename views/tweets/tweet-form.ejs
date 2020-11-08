@@ -3,9 +3,9 @@
      <h1 class="tweet-modified">Modifier le tweet</h1> 
 <% } %>     
 <div class="d-flex flex-row content mx-auto">
-  <div class="profile-container">
-    <%- include('../includes/profile.ejs') -%>
-  </div>
+  
+     <!--  <-%include('../includes/profile.ejs') BUG affichage ne fonctionne pas tweets no defined -%> -->
+  
   <div class="flex-fill">
     <form action=<%=tweet._id ? "/tweets/update/" + tweet._id : "/tweets" %> method="post" class="card">
        <div class="card-header">Ecrire un tweet</div>
